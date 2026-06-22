@@ -1,0 +1,24 @@
+Merge Sort Algorithm
+
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    mid = len(arr)//2
+
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+
+    return merge(left, right)
+
+
+def merge(a, b):
+    res = []
+
+    while len(a) > 0 and len(b) > 0:
+        if a[0] < b[0]:
+            res.append(a.pop(0))
+        else:
+            res.append(b.pop(0))
+
+    return res + a + b

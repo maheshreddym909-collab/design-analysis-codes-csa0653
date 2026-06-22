@@ -1,0 +1,9 @@
+Unique Absolute Values Counter
+
+def solve(nums):
+    s = set()
+
+    for x in nums:
+        s.add(abs(x))
+
+    return len(s)

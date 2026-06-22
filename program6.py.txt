@@ -1,0 +1,8 @@
+Sort Array and Find Maximum Element
+
+def get_max(nums):
+    if len(nums) == 0:
+        return None
+
+    nums.sort()
+    return nums[-1]

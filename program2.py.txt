@@ -1,0 +1,10 @@
+Common Elements Counter in Two Arrays
+
+def find_counts(nums1, nums2):
+    s1 = set(nums1)
+    s2 = set(nums2)
+
+    ans1 = sum(1 for x in nums1 if x in s2)
+    ans2 = sum(1 for x in nums2 if x in s1)
+
+    return [ans1, ans2]

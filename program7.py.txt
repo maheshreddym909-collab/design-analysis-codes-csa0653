@@ -1,0 +1,10 @@
+Remove Duplicates from Array
+
+def unique_elements(nums):
+    s = []
+
+    for x in nums:
+        if x not in s:
+            s.append(x)
+
+    return s

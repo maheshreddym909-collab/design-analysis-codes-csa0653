@@ -1,0 +1,17 @@
+House Robber II (Circular Street Problem)
+
+def rob(nums):
+    def fun(arr):
+        a = b = 0
+
+        for x in arr:
+            temp = max(b, a + x)
+            a = b
+            b = temp
+
+        return b
+
+    if len(nums) == 1:
+        return nums[0]
+
+    return max(fun(nums[:-1]), fun(nums[1:]))
