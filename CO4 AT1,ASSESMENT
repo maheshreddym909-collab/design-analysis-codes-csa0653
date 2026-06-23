@@ -23,12 +23,6 @@ for _ in range(n - 1):
 
 print("Total weight is", w)
 
-sample input:
-0 2 3
-2 0 1
-3 1 0
-
- out put : total weight is 3.
 
 
                                                 2.MINIMUM SPANNING TREE-KRUSKAL'S ALGORITHM:
@@ -55,13 +49,3 @@ for u, v, w in edges:
         cost += w
 
 print("MST cost =", cost)
-
-sample input:
-0 1 2
-0 2 3
-1 2 1
-1 3 4
-2 3 5
-
-out put:
-MST cost = 7
