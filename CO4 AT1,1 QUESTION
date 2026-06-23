@@ -1,0 +1,21 @@
+1.MINIMUM SPANNING TREE-PRIM'S ALGORITHM :
+  
+n = int(input())
+g = [list(map(int, input().split())) for _ in range(n)]
+
+v = [0] * n
+v[0] = 1
+w = 0
+
+for _ in range(n - 1):
+    m = 999
+    for i in range(n):
+        if v[i]:
+            for j in range(n):
+                if g[i][j] and not v[j] and g[i][j] < m:
+                    m = g[i][j]
+                    x = j
+    v[x] = 1
+    w += m
+
+print("Total weight is", w)
