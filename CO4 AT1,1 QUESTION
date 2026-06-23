@@ -1,5 +1,5 @@
-1.MINIMUM SPANNING TREE-PRIM'S ALGORITHM :
-  
+1.MINIMUM SPANNNG TREE-PRIM'S ALGORITHM :
+
 n = int(input())
 g = [list(map(int, input().split())) for _ in range(n)]
 
@@ -19,3 +19,28 @@ for _ in range(n - 1):
     w += m
 
 print("Total weight is", w)
+
+2.MINIMUM SPANNING TREE-KRUSKAL'S ALGORITHM:
+
+n = int(input())
+edges = []
+
+for i in range(n):
+    u, v, w = map(int, input().split())
+    edges.append((u, v, w))
+
+parent = [0, 1, 2, 3]
+cost = 0
+
+edges.sort(key=lambda x: x[2])
+
+for u, v, w in edges:
+    if parent[u] != parent[v]:
+        old = parent[v]
+        new = parent[u]
+        for i in range(4):
+            if parent[i] == old:
+                parent[i] = new
+        cost += w
+
+print("MST cost =", cost)
