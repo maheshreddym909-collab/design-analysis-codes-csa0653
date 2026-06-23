@@ -40,7 +40,7 @@ for w, u, v in edges:
 
 print("Minimum Cost =", cost)
 
-                                     2. MANUFACTURING RESOURCE ALLOCATION (DYNAMIC PROGRAMMING)
+                                     2. MANUFACTURING RESOURCE ALLOCATION (DYNAMIC PROGRAMMING).
 
 n = int(input())
 
