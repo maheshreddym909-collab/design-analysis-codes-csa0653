@@ -1,4 +1,4 @@
-1.MINIMUM SPANNNG TREE-PRIM'S ALGORITHM :
+                                                1.MINIMUM SPANNNG TREE-PRIM'S ALGORITHM :
 
 n = int(input())
 g = [list(map(int, input().split())) for _ in range(n)]
@@ -20,7 +20,8 @@ for _ in range(n - 1):
 
 print("Total weight is", w)
 
-2.MINIMUM SPANNING TREE-KRUSKAL'S ALGORITHM:
+
+                                                2.MINIMUM SPANNING TREE-KRUSKAL'S ALGORITHM:
 
 n = int(input())
 edges = []
