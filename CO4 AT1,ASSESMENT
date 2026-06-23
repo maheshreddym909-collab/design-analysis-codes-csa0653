@@ -1,4 +1,7 @@
-                                                1.MINIMUM SPANNNG TREE-PRIM'S ALGORITHM :
+NAME : S.VARUN RAM
+REG NO: 192565023
+
+                                              1.MINIMUM SPANNNG TREE-PRIM'S ALGORITHM :
 
 n = int(input())
 g = [list(map(int, input().split())) for _ in range(n)]
